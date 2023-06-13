@@ -1,11 +1,11 @@
-About edgetest-pip-tools
-========================
+About edgetest-pip-tools-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edgetest-pip-tools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/capitalone/edgetest-pip-tools
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edgetest-pip-tools-feedstock/blob/main/LICENSE.txt)
 
 Summary: edgetest-pip-tools is a pip-tools plugin for edgetest
 

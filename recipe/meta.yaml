@@ -1,5 +1,5 @@
 {% set name = "edgetest-pip-tools" %}
-{% set version = "2022.12.0" %}
+{% set version = "2023.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 05e24bfa285c7ade194b48aa74102badb23548ff5c49bd4242b8c9b6a149995a
+  sha256: 64225752511f9ed97404194aa830d27f14a85f5c997f3cf137a92d2fabffb2d7
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install -vv --no-deps .
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - edgetest >=2021.12.3
-    - pip-tools >=6.0.0,<=6.12.1
+    - pip-tools >=6.0.0,<=6.13.0
     - python >=3.7
 
 test:
