@@ -1,13 +1,13 @@
 {% set name = "edgetest-pip-tools" %}
-{% set version = "2023.8.0" %}
+{% set version = "2024.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f8d276b1db4d198d1bde9ecf85752b3a9a784d29bfc5c19f68a5b02431261c9b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9485782dc5da2c4d0e67e55b37dd317f4879d8bee3b8bfc6d764ae01b45ff32f
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - setuptools >=64.0.0
   run:
-    - edgetest >=2021.12.3
-    - pip-tools >=6.0.0,<=7.3.0
+    - edgetest >=2024.4.0
     - python >=3.8
 
 test:
@@ -42,6 +42,5 @@ extra:
   recipe-maintainers:
     - jdawang
     - gladysteh99
-    - NikhilJArora
     - fdosani
     - ak-gupta
