@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - setuptools >=64.0.0
   run:
-    - edgetest >=2021.12.3
-    - pip-tools >=6.0.0,<=7.3.0
+    - edgetest >=2024.4.0
     - python >=3.8
 
 test:
@@ -42,6 +42,5 @@ extra:
   recipe-maintainers:
     - jdawang
     - gladysteh99
-    - NikhilJArora
     - fdosani
     - ak-gupta
