@@ -1,13 +1,13 @@
 {% set name = "edgetest-pip-tools" %}
-{% set version = "2026.1.0" %}
+{% set version = "2026.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c16c748a1de4cfae27c11dcbef849515786d86d58d808c19085f55f187a2132d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5e85941b9aa8a31608ee01760d48f204caf379a4c73bc50b8a19f7507312e76a
 
 build:
   noarch: python
